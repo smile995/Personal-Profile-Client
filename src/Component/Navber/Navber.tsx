@@ -25,7 +25,7 @@ const Navber = () => {
   );
 
   return (
-    <div className="navbar bg-base-100 shadow-sm px-4">
+    <div className="navbar bg-base-200 shadow-sm px-4 rounded">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -46,7 +46,7 @@ const Navber = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box font-bold w-52"
           >
             {navberItems}
           </ul>
@@ -56,7 +56,7 @@ const Navber = () => {
         </NavLink>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-2">{navberItems}</ul>
+        <ul className="menu menu-horizontal px-1 font-bold gap-2">{navberItems}</ul>
       </div>
       <div className="navbar-end">
         <a
