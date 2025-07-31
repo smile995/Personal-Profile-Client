@@ -10,11 +10,11 @@ const BannerAnimation = () => {
           1000, // wait 1s before replacing "Mice" with "Hamsters"
           "MERN Stack Developer",
           1000,
-          "Backend Developer",
-          1000,
           "Frontend Developer",
           1000,
-          "Fulstack Developer",
+          "Full Stack Developer",
+          1000,
+          "Backend Developer",
           1000,
         ]}
         wrapper="span"
