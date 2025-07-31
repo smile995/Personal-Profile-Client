@@ -1,4 +1,5 @@
-import SocialLinnk from "../ReusableComps/SocialLinnk";
+import SocialLink from "../ReusableComps/SocialLink";
+
 
 const Footer = () => {
   return (
@@ -15,14 +16,14 @@ const Footer = () => {
 
         {/* Socials */}
         <div>
-          <SocialLinnk />
+          <SocialLink heading="Social Links" />
         </div>
 
         {/* Contact Info */}
         <div className="flex flex-col items-center md:items-end space-y-2">
           <h2 className="text-lg font-bold">Contact Info</h2>
           <p>
-            Email:{" "}
+            Email:
             <a
               href="mailto:amirhamzaismail275@gmail.com"
               className="link link-hover"

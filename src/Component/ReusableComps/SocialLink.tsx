@@ -6,11 +6,11 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 
-const SocialLinnk = () => {
+const SocialLink = ({heading}:{heading:string}) => {
   return (
     <div className="flex flex-col items-center space-y-4">
-      <h2 className="text-lg font-bold">Connect with me</h2>
-      <div className="flex gap-4 justify-center mt-4">
+      <h2 className="text-lg font-bold">{heading}</h2>
+      <div className="flex gap-4 mt-4">
         {/* Twitter */}
         <a href="#" target="_blank" aria-label="Twitter">
           <FaXTwitter className="w-6 h-6 hover:text-blue-400 transition-colors duration-200" />
@@ -58,4 +58,4 @@ const SocialLinnk = () => {
   );
 };
 
-export default SocialLinnk;
+export default SocialLink;
