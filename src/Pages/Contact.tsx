@@ -1,12 +1,12 @@
-import { FaLink, FaLocationPin, FaPhone } from "react-icons/fa6";
+import {  FaPhone } from "react-icons/fa6";
 import HeaderTitle from "../Component/ReusableComps/HeaderTitle";
 import SocialLink from "../Component/ReusableComps/SocialLink";
 import { MdEmail, MdLocationOn } from "react-icons/md";
-import { GiWorld } from "react-icons/gi";
+
 const Contact = () => {
   return (
     <div className="max-w-6xl mx-auto px-2 md:px-4 py-10">
-      {/* Title & Subtitle */}
+
       <div className="text-center mb-12">
         <HeaderTitle
           titleColor="Touch"
