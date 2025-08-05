@@ -1,3 +1,4 @@
+import {  FaHelicopterSymbol } from "react-icons/fa6";
 import { NavLink } from "react-router";
 
 const Navber = () => {
@@ -25,7 +26,7 @@ const Navber = () => {
   );
 
   return (
-    <div className="navbar bg-base-200 shadow-sm px-4 rounded">
+    <div className="navbar bg-blue-600 text-white  shadow-sm px-4 ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -46,24 +47,29 @@ const Navber = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box font-bold w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box font-bold w-52"
           >
             {navberItems}
           </ul>
         </div>
-        <NavLink to="/" className="btn btn-ghost text-xl font-bold">
-          A.H.I
+        <NavLink to="/">
+          <p className=" flex items-center font-semibold  text-white ">
+            <FaHelicopterSymbol className="text-2xl" />
+            AMZA
+          </p>
         </NavLink>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 font-bold gap-2">{navberItems}</ul>
+        <ul className="menu menu-horizontal px-1 font-bold gap-2">
+          {navberItems}
+        </ul>
       </div>
       <div className="navbar-end">
         <a
           href="/Amir-Hamza-Ismail-Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-outline btn-primary rounded-full"
+          className="btn btn-outline hover:text-blue-600 rounded-full"
         >
           Download CV
         </a>

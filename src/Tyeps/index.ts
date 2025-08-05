@@ -7,3 +7,17 @@ export interface TBlog {
   tag: string[];        // Example: ["React", "Hooks"]
   image: string;        // Example: "https://example.com/blog-image.jpg"
 }
+
+
+
+export type TProject = {
+  id: number;
+  title: string;
+  description: string;
+  tech: string[];
+  features: string[];
+  imageUrl: string;
+  liveUrl: string;
+  codeUrl: string;
+  status: string;
+};

@@ -6,6 +6,7 @@ const BlogDetails = () => {
   const { id } = useParams();
   const blog = blogs.find((item) => item.id === Number(id));
 
+
   if (!blog) {
     return (
       <div className="text-center text-red-600 font-semibold mt-10">
@@ -29,7 +30,7 @@ const BlogDetails = () => {
       <img
         src={blog.image}
         alt={blog.title}
-        className="w-full h-80 object-cover rounded-md mb-6"
+        className="w-full object-cover rounded-md mb-6"
       />
 
       {/* Details */}

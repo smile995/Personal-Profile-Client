@@ -5,7 +5,7 @@ import Projects from "./Projects";
 const HomePage = () => {
   return (
     <>
-      <section className="my-5">
+      <section>
         <Banner />
         <Projects/>
         <Blogs/>

@@ -7,6 +7,7 @@ import Contact from "../Pages/Contact";
 import Skills from "../Pages/Skills";
 import Projects from "../Pages/Projects";
 import BlogDetails from "../Component/ReusableComps/BlogDetails";
+import ProjectDetails from "../Component/ReusableComps/ProjectDetails";
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ export const router = createBrowserRouter([
       { index: true, element: <HomePage/> },
       { path: "/about", element: <AboutPage/> },
       { path: "/projects", element: <Projects/> },
+      { path: "/projects/:id", element: <ProjectDetails/> },
       { path: "/blogs", element: <Blogs/> },
       { path: "/blogs/:id", element: <BlogDetails/> },
       { path: "/contact", element: <Contact/> },

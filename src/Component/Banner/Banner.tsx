@@ -2,12 +2,12 @@ import BannerAnimation from "../Animation/BannerAnimation";
 
 const Banner = () => {
   return (
-    <div className=" bg-base-200 px-5">
+    <div className="px-5 flex items-center h-[550px]">
       <div className="hero-content flex-col md:flex-row-reverse">
         <div className="w-full sm:w-1/2 flex justify-center">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-            className="md:max-w-sm w-full rounded-lg shadow-2xl"
+            src="https://avatars.githubusercontent.com/u/127654019"
+            className="md:max-w-sm w-full rounded-full shadow-2xl"
           />
         </div>
         <div className="w-full sm:w-1/2 ">

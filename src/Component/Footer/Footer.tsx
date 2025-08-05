@@ -3,7 +3,7 @@ import SocialLink from "../ReusableComps/SocialLink";
 
 const Footer = () => {
   return (
-    <footer className="bg-base-200 text-base-content  md:px-16 p-8 rounded">
+    <footer className="bg-blue-600 text-white  md:px-16 p-8 rounded">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Navigation */}
         <div className="flex flex-col items-center md:items-start space-y-2">
