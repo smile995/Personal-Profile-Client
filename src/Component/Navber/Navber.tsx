@@ -47,15 +47,15 @@ const Navber = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box font-bold w-52"
+            className="menu menu-sm text-gray-500 dropdown-content mt-3 z-[1] p-2 shadow rounded-box font-bold w-52"
           >
             {navberItems}
           </ul>
         </div>
         <NavLink to="/">
-          <p className=" flex items-center font-semibold  text-white ">
+          <p className=" flex text-xl items-center font-semibold gap-0.5  text-white ">
             <FaHelicopterSymbol className="text-2xl" />
-            AMZA
+            amza
           </p>
         </NavLink>
       </div>
