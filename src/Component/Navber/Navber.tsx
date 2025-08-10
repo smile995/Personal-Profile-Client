@@ -1,4 +1,4 @@
-import {  FaHelicopterSymbol } from "react-icons/fa6";
+import { FaHelicopterSymbol } from "react-icons/fa6";
 import { NavLink } from "react-router";
 
 const Navber = () => {
@@ -53,7 +53,7 @@ const Navber = () => {
           </ul>
         </div>
         <NavLink to="/">
-          <p className=" flex text-xl items-center font-semibold gap-0.5  text-white ">
+          <p className=" flex text-xl items-center font-semibold gap-0.5 text-white">
             <FaHelicopterSymbol className="text-2xl" />
             amza
           </p>
@@ -69,9 +69,10 @@ const Navber = () => {
           href="/Amir-Hamza-Ismail-Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-outline hover:text-blue-600 rounded-full"
         >
-          Download CV
+          <button className="md:px-3 px-2 py-1  md:py-2 border border-white rounded-full cursor-pointer">
+            Download CV
+          </button>
         </a>
       </div>
     </div>

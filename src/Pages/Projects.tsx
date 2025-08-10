@@ -5,7 +5,7 @@ import { projects } from "../Data/project";
 
 const Projects = () => {
   return (
-    <Container >
+    <Container>
       <HeaderTitle
         titleColor="Projects"
         titleStart="🚀 My Best"
@@ -16,6 +16,7 @@ const Projects = () => {
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
+  
     </Container>
   );
 };

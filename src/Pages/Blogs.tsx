@@ -1,12 +1,13 @@
 
 import BlogCard from "../Component/ReusableComps/BlogCard";
+import Container from "../Component/ReusableComps/Container";
 import HeaderTitle from "../Component/ReusableComps/HeaderTitle";
 import { blogs } from "../Data/blogs";
 
 const Blogs = () => {
 
   return (
-    <div className=" px-4 py-12">
+    <Container>
   
       <HeaderTitle
         titleColor="Blogs"
@@ -14,12 +15,12 @@ const Blogs = () => {
         subTitle="  Here you'll find articles, tutorials, and thoughts on development,
         tools, and productivity."
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         {blogs.map((blog) => (
           <BlogCard key={blog.id} blog={blog} />
         ))}
       </div>
-    </div>
+    </Container>
   );
 };
 

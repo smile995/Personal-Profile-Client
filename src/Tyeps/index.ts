@@ -3,12 +3,10 @@ export interface TBlog {
   title: string;
   summary: string;
   details: string;
-  date: string;         // Example: "July 15, 2025"
-  tag: string[];        // Example: ["React", "Hooks"]
-  image: string;        // Example: "https://example.com/blog-image.jpg"
+  date: string; // Example: "July 15, 2025"
+  tag: string[]; // Example: ["React", "Hooks"]
+  image: string; // Example: "https://example.com/blog-image.jpg"
 }
-
-
 
 export type TProject = {
   id: number;
@@ -18,6 +16,10 @@ export type TProject = {
   features: string[];
   imageUrl: string;
   liveUrl: string;
-  codeUrl: string;
-  status: string;
+  frontEndUrl: string;
+  backEndUrl: string;
+  longDescription?: string;
+  status: "completed" | "in-progress" | "planned";
+  challenges?: string[];
+  learnings?: string[];
 };
