@@ -11,8 +11,8 @@ const Projects = () => {
         subTitle="These are some of the projects I've built — combining frontend, backend, and AI."
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+        {projects?.map((project) => (
+          <ProjectCard key={project?.id} project={project} />
         ))}
       </div>
   

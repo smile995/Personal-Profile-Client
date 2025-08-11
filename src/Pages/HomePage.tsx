@@ -1,5 +1,6 @@
 import Banner from "../Component/Banner/Banner";
 import KeySkills from "../Component/KeySkill/KeySkills";
+import ReviewSection from "../Component/Reviews/ReviewSection";
 import Blogs from "./Blogs";
 import Projects from "./Projects";
 
@@ -8,11 +9,11 @@ const HomePage = () => {
     <>
       <section>
         <Banner />
-        <Projects/>
-        <KeySkills/>
-        <Blogs/>
+        <Projects />
+        <KeySkills />
+        <Blogs />
+        <ReviewSection />
       </section>
-     
     </>
   );
 };

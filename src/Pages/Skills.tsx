@@ -24,21 +24,21 @@ const SkillsSection = ({
         {title}
       </h2>
       <div className="flex flex-wrap justify-center gap-6">
-        {skills.map((skill) => (
+        {skills?.map((skill) => (
           <div
-            key={skill.name}
+            key={skill?.name}
             className="flex flex-col items-center bg-white/85 backdrop-blur-lg rounded-2xl shadow-md p-4 w-28 hover:shadow-lg hover:scale-105 transition"
           >
             <div
               className="radial-progress text-primary w-16 h-16"
               style={
-                { "--value": animate ? skill.value : 0 } as React.CSSProperties
+                { "--value": animate ? skill?.value : 0 } as React.CSSProperties
               }
               role="progressbar"
             >
-              {skill.icon}
+              {skill?.icon}
             </div>
-            <p className="mt-2 text-sm font-medium text-center">{skill.name}</p>
+            <p className="mt-2 text-sm font-medium text-center">{skill?.name}</p>
           </div>
         ))}
       </div>

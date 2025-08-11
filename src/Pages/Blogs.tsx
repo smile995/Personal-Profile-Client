@@ -17,8 +17,8 @@ const Blogs = () => {
         tools, and productivity."
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-        {blogs.map((blog) => (
-          <BlogCard key={blog.id} blog={blog} />
+        {blogs?.map((blog) => (
+          <BlogCard key={blog?.id} blog={blog} />
         ))}
       </div>
     </Container>
