@@ -22,7 +22,7 @@ const BlogCard = ({ blog }: { blog: TBlog }) => {
           </h2>
 
           <p className="text-gray-600 text-sm mb-4">
-            {summary.length > 120 ? summary.slice(0, 120) + "..." : summary}
+            {summary.length > 90 ? summary.slice(0, 90) + "..." : summary}
           </p>
 
           <div className="flex flex-wrap gap-2 mb-4">

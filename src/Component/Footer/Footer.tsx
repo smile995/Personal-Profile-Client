@@ -1,17 +1,24 @@
 import SocialLink from "../ReusableComps/SocialLink";
 
-
 const Footer = () => {
   return (
-    <footer className="bg-blue-600 text-white  md:px-16 p-8 rounded">
+    <footer className="bg-gradient-to-r from-primary to-secondary text-white  md:px-16 p-8 rounded">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Navigation */}
         <div className="flex flex-col items-center md:items-start space-y-2">
           <h2 className="text-lg font-bold">Quick Links</h2>
-          <a href="/contact" className="link link-hover">Contact</a>
-          <a href="/about" className="link link-hover">About</a>
-          <a href="projets/" className="link link-hover">Projects</a>
-          <a href="/blogs" className="link link-hover">Blogs</a>
+          <a href="/contact" className="link link-hover">
+            Contact
+          </a>
+          <a href="/about" className="link link-hover">
+            About
+          </a>
+          <a href="projets/" className="link link-hover">
+            Projects
+          </a>
+          <a href="/blogs" className="link link-hover">
+            Blogs
+          </a>
         </div>
 
         {/* Socials */}

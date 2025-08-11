@@ -4,12 +4,12 @@ import Container from "../ReusableComps/Container";
 const Banner = () => {
   return (
     <Container>
-      <div className="p-5 flex items-center  min-h-[550px]">
+      <div className="md:p-5 flex items-center  min-h-[550px]">
         <div className="w-full md:flex items-center space-y-5 justify-evenly  gap-5 ">
           <div className="w-full pl-3 sm:w-1/2">
             <h1 className="md:text-4xl text-2xl font-bold mb-6">
               Hi, I'm{" "}
-              <span className="text-blue-600 text-xl">
+              <span className="text-[#452bd6] text-xl">
                 <BannerAnimation />
               </span>
             </h1>
@@ -22,13 +22,13 @@ const Banner = () => {
             <div className="flex gap-6">
               <a
                 href="/projects"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition"
+                className="bg-[#452bd6] hover:bg-blue-700 text-white font-semibold md:py-3 py-1 md:px-6 px-3 rounded-lg shadow-md transition"
               >
                 View My Projects
               </a>
               <a
                 href="/contact"
-                className="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold py-3 px-6 rounded-lg transition"
+                className="border border-[#f23098] text-[#f23098] hover:bg-[#f23098] hover:text-white font-semibold md:py-3 py-1 md:px-6 px-3 rounded-lg transition"
               >
                 Contact Me
               </a>

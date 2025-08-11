@@ -9,8 +9,9 @@ const Contact = () => {
 
       <div className="text-center mb-12">
         <HeaderTitle
-          titleColor="Touch"
-          titleStart="Get in"
+          // titleColor="Touch"
+          // titleStart="Get in"
+          title="Get in Touch"
           subTitle="  Whether you want to collaborate, have a question, or just want to say hi —
           feel free to drop a message!"
         />
@@ -27,7 +28,7 @@ const Contact = () => {
           </div>
           <div className="space-y-3">
             <div className="flex items-center md:gap-3 gap-1">
-              <div className="p-2 bg-blue-600 rounded">
+              <div className="p-2 bg-gradient-to-r from-primary to-secondary rounded">
                 <MdEmail className="md:text-2xl text-white " />
               </div>
               <div>
@@ -43,7 +44,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex items-center md:gap-3 gap-1">
-              <div className="p-2 bg-blue-600 rounded">
+              <div className="p-2 bg-gradient-to-r from-primary to-secondary rounded">
                 <FaPhone className="md:text-2xl text-white " />
               </div>
               <div>
@@ -61,7 +62,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex items-center md:gap-3 gap-1">
-              <div className="p-2 bg-blue-600 rounded">
+              <div className="p-2 bg-gradient-to-r from-primary to-secondary rounded">
                 <MdLocationOn className="md:text-2xl text-white " />
               </div>
               <div>
@@ -110,7 +111,7 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 w-full "
+            className="bg-gradient-to-r from-primary to-secondary text-white p-3 rounded-lg hover:bg-blue-700 w-full "
             disabled
             title="Static only. Backend coming soon!"
           >

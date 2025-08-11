@@ -7,8 +7,7 @@ const Projects = () => {
   return (
     <Container>
       <HeaderTitle
-        titleColor="Projects"
-        titleStart="🚀 My Best"
+        title="My Best Projects"
         subTitle="These are some of the projects I've built — combining frontend, backend, and AI."
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">

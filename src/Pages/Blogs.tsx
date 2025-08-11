@@ -10,8 +10,9 @@ const Blogs = () => {
     <Container>
   
       <HeaderTitle
-        titleColor="Blogs"
-        titleStart="📝 My All"
+        // titleColor="Blogs"
+        // titleStart="📝 My All"
+        title="My All Blogs"
         subTitle="  Here you'll find articles, tutorials, and thoughts on development,
         tools, and productivity."
       />
