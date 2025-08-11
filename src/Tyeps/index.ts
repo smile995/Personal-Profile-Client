@@ -1,13 +1,21 @@
+import type { JSX } from "react";
+
 export interface TBlog {
   id: number;
   title: string;
   summary: string;
   details: string;
-  date: string; // Example: "July 15, 2025"
-  tag: string[]; // Example: ["React", "Hooks"]
-  image: string; // Example: "https://example.com/blog-image.jpg"
+  date: string; 
+  tag: string[];
+  image: string; 
 }
-
+export interface TReview {
+  name: string;
+  role: string;
+  text: string;
+  rating?: number;     
+  avatarUrl?: string;   
+}
 export type TProject = {
   id: number;
   title: string;
@@ -23,3 +31,8 @@ export type TProject = {
   challenges?: string[];
   learnings?: string[];
 };
+export interface Skill {
+  name: string;
+  value: number;
+  icon: JSX.Element;
+}

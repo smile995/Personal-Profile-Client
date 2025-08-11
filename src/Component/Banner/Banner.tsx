@@ -4,7 +4,7 @@ import Container from "../ReusableComps/Container";
 const Banner = () => {
   return (
     <Container>
-      <div className="md:p-5 flex items-center pt-20  min-h-[550px]">
+      <div className="md:p-5 flex items-center  min-h-[550px]">
         <div className="w-full md:flex items-center space-y-5 justify-evenly  gap-5 ">
           <div className="w-full pl-3 sm:w-1/2">
             <h1 className="md:text-4xl text-2xl font-bold mb-6">

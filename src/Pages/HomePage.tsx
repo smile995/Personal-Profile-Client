@@ -1,4 +1,5 @@
 import Banner from "../Component/Banner/Banner";
+import KeySkills from "../Component/KeySkill/KeySkills";
 import Blogs from "./Blogs";
 import Projects from "./Projects";
 
@@ -8,6 +9,7 @@ const HomePage = () => {
       <section>
         <Banner />
         <Projects/>
+        <KeySkills/>
         <Blogs/>
       </section>
      
