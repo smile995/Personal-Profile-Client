@@ -2,13 +2,15 @@ import type { TReview } from "../Tyeps";
 
 export const reviews: TReview[] = [
   {
+    _id:1,
     name: "Jane Doe",
     role: "Product Manager at XYZ",
-    text: "Amir is a highly skilled developer who delivered our project ahead of schedule. Great communication and expertise!",
+    text: "Amir is a highly skilled developer who delivered our project ahead of schedule. ",
     rating: 5,
     avatarUrl: "https://randomuser.me/api/portraits/women/44.jpg",
   },
   {
+    _id:2,
     name: "John Smith",
     role: "CTO at ABC Corp",
     text: "Reliable and talented — Amir helped us scale our platform efficiently.",
@@ -16,6 +18,7 @@ export const reviews: TReview[] = [
     avatarUrl: "https://randomuser.me/api/portraits/men/34.jpg",
   },
   {
+    _id:3,
     name: "Alice Johnson",
     role: "Lead Designer at Creative Inc.",
     text: "Working with Amir was a pleasure; he understands design and development perfectly.",
@@ -23,6 +26,7 @@ export const reviews: TReview[] = [
     avatarUrl: "https://randomuser.me/api/portraits/women/68.jpg",
   },
   {
+    _id:4,
     name: "Michael Brown",
     role: "Founder of Startup Co.",
     text: "Amir delivered outstanding results on time, and his coding skills are top-notch.",
@@ -30,6 +34,7 @@ export const reviews: TReview[] = [
     avatarUrl: "https://randomuser.me/api/portraits/men/22.jpg",
   },
   {
+    _id:5,
     name: "Emily Davis",
     role: "Project Coordinator at BuildIt",
     text: "Great collaborator and always proactive. The project went smoothly thanks to Amir.",
@@ -37,6 +42,7 @@ export const reviews: TReview[] = [
     avatarUrl: "https://randomuser.me/api/portraits/women/30.jpg",
   },
   {
+    _id:5,
     name: "David Wilson",
     role: "Senior Developer at TechSoft",
     text: "His expertise in full-stack development is impressive. Highly recommended.",
@@ -44,6 +50,7 @@ export const reviews: TReview[] = [
     avatarUrl: "https://randomuser.me/api/portraits/men/56.jpg",
   },
   {
+    _id:6,
     name: "Sophia Martinez",
     role: "UX Researcher at InnovateX",
     text: "Amir's attention to detail made the user experience seamless and intuitive.",
@@ -51,6 +58,7 @@ export const reviews: TReview[] = [
     avatarUrl: "https://randomuser.me/api/portraits/women/77.jpg",
   },
   {
+    _id:8,
     name: "James Lee",
     role: "CTO at NextGen Solutions",
     text: "Excellent problem solver and reliable partner for our tech initiatives.",

@@ -10,6 +10,7 @@ export interface TBlog {
   image: string; 
 }
 export interface TReview {
+  _id:number,
   name: string;
   role: string;
   text: string;
