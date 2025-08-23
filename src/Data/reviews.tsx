@@ -6,7 +6,7 @@ export const reviews: TReview[] = [
     name: "Jane Doe",
     role: "Product Manager at XYZ",
     text: "Amir is a highly skilled developer who delivered our project ahead of schedule. ",
-    rating: 5,
+    rating: 3.5,
     avatarUrl: "https://randomuser.me/api/portraits/women/44.jpg",
   },
   {
@@ -14,7 +14,7 @@ export const reviews: TReview[] = [
     name: "John Smith",
     role: "CTO at ABC Corp",
     text: "Reliable and talented — Amir helped us scale our platform efficiently.",
-    rating: 4,
+    rating: 4.5,
     avatarUrl: "https://randomuser.me/api/portraits/men/34.jpg",
   },
   {
@@ -46,7 +46,7 @@ export const reviews: TReview[] = [
     name: "David Wilson",
     role: "Senior Developer at TechSoft",
     text: "His expertise in full-stack development is impressive. Highly recommended.",
-    rating: 5,
+    rating: 4.8,
     avatarUrl: "https://randomuser.me/api/portraits/men/56.jpg",
   },
   {
@@ -54,7 +54,7 @@ export const reviews: TReview[] = [
     name: "Sophia Martinez",
     role: "UX Researcher at InnovateX",
     text: "Amir's attention to detail made the user experience seamless and intuitive.",
-    rating: 5,
+    rating: 3.3,
     avatarUrl: "https://randomuser.me/api/portraits/women/77.jpg",
   },
   {

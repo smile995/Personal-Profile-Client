@@ -8,7 +8,7 @@ const HeaderTitle = ({
 }) => {
   return (
     <div className="md:w-1/2 w-full mx-auto ">
-      <h1 className="md:text-4xl text-2xl font-bold text-center mb-5">
+      <h1 className="md:text-4xl text-2xl font-bold text-center mb-3">
         <span className="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
           {title}
         </span>

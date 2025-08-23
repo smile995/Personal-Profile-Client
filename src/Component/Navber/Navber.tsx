@@ -1,6 +1,6 @@
 import { FaHelicopterSymbol } from "react-icons/fa6";
-import { NavLink } from "react-router";
-
+import { Link, NavLink } from "react-router";
+import "./navber.css";
 const Navber = () => {
   const navberItems = (
     <>
@@ -52,12 +52,12 @@ const Navber = () => {
             {navberItems}
           </ul>
         </div>
-        <NavLink to="/">
+        <Link to="/">
           <p className=" flex text-xl items-center font-semibold gap-0.5 text-white">
             <FaHelicopterSymbol className="text-2xl" />
             amza
           </p>
-        </NavLink>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-bold gap-2">
