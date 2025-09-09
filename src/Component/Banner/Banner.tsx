@@ -1,6 +1,7 @@
 import BannerAnimation from "../Animation/BannerAnimation";
 import Container from "../ReusableComps/Container";
-
+import Lottie from "lottie-react";
+import coding from "../../assets/Lotties/programming.json";
 const Banner = () => {
   return (
     <Container>
@@ -35,10 +36,7 @@ const Banner = () => {
             </div>
           </div>
           <div className="w-full mx-auto sm:w-1/2 flex justify-center">
-            <img
-              src="https://avatars.githubusercontent.com/u/127654019"
-              className="md:max-w-sm w-2/3  rounded-lg shadow-2xl"
-            />
+          <Lottie animationData={coding} loop={true} className="w-full h-full max-w-md" />
           </div>
         </div>
       </div>

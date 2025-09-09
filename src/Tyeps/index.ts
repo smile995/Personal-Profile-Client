@@ -37,3 +37,14 @@ export interface Skill {
   value: number;
   icon: JSX.Element;
 }
+
+export interface TExperience {
+  id: number;
+  role: string;
+  company: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  description: string;
+  technologies?: string[]; 
+}
