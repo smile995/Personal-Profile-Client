@@ -1,7 +1,9 @@
 import Banner from "../Component/Banner/Banner";
 import KeySkills from "../Component/KeySkill/KeySkills";
 import EducationTimeline from "../Component/ReusableComps/EducationTimeline";
+import EmailSection from "../Component/ReusableComps/EmailSection";
 import ReviewSection from "../Component/Reviews/ReviewSection";
+
 import Blogs from "./Blogs";
 import Projects from "./Projects";
 
@@ -13,8 +15,9 @@ const HomePage = () => {
         <Projects />
         <KeySkills />
         <Blogs />
-        <EducationTimeline/>
-        <ReviewSection />
+        <EducationTimeline />
+        <EmailSection />
+        <ReviewSection/>
       </section>
     </>
   );

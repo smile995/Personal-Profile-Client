@@ -1,4 +1,4 @@
-import { FaHelicopterSymbol } from "react-icons/fa6";
+import { FaDownload, FaHelicopterSymbol } from "react-icons/fa6";
 import { Link, NavLink } from "react-router";
 import "./navber.css";
 const Navber = () => {
@@ -70,8 +70,8 @@ const Navber = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="md:px-3 px-2 py-1  md:py-2 border border-white rounded-full cursor-pointer">
-            Download CV
+          <button className="btn btn-primary border-0 text-white hover:scale-105 duration-300">
+            <FaDownload/> RESUME
           </button>
         </a>
       </div>

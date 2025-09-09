@@ -2,30 +2,23 @@ import {  FaPhone } from "react-icons/fa6";
 import HeaderTitle from "../Component/ReusableComps/HeaderTitle";
 import SocialLink from "../Component/ReusableComps/SocialLink";
 import { MdEmail, MdLocationOn } from "react-icons/md";
-
+import network from "../assets/Lotties/networking.json";
+import Lottie from "lottie-react";
 const Contact = () => {
   return (
     <div className="max-w-6xl mx-auto px-2 md:px-4 py-10">
 
       <div className="text-center mb-12">
         <HeaderTitle
-          // titleColor="Touch"
-          // titleStart="Get in"
           title="Get in Touch"
           subTitle="  Whether you want to collaborate, have a question, or just want to say hi —
           feel free to drop a message!"
         />
       </div>
 
-      <div className="grid md:grid-cols-2 gap-10 md:p-8 p-1">
-        <div className="space-y-3">
-          <div className="space-y-2">
-            <h2 className="text-2xl font-bold">Let's Connect</h2>
-            <p className="text-md text-gray-600">
-              I'm always open to discussing new opportunities, creative
-              projects, or just having a chat about technology and development.
-            </p>
-          </div>
+    
+      <div className="grid md:grid-cols-2 items-center gap-10 md:p-8 p-1">
+        <div>
           <div className="space-y-3">
             <div className="flex items-center md:gap-3 gap-1">
               <div className="p-2 bg-gradient-to-r from-primary to-secondary rounded">
@@ -82,42 +75,9 @@ const Contact = () => {
           </div>
         </div>
 
-        <form className="space-y-6">
-          <div className="grid grid-cols-1 md:gap-3 gap-1 md:grid-cols-2 sm:w-full">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 w-full"
-              required
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 w-full"
-              required
-            />
-          </div>
-          <input
-            type="text"
-            placeholder="Subject"
-            className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 w-full"
-            required
-          />
-          <textarea
-            placeholder="Your Message"
-            rows={5}
-            className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 w-full"
-            required
-          ></textarea>
-          <button
-            type="submit"
-            className="bg-gradient-to-r from-primary to-secondary text-white p-3 rounded-lg hover:bg-blue-700 w-full "
-            disabled
-            title="Static only. Backend coming soon!"
-          >
-            Send Message
-          </button>
-        </form>
+       <div>
+        <Lottie animationData={network} loop={true} />
+       </div>
       </div>
     </div>
   );
