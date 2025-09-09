@@ -1,14 +1,13 @@
 import type { TProject } from "../../Tyeps";
-import { FaArrowRight, FaLink } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
+import { HiOutlineExternalLink } from "react-icons/hi";
 
 import "aos/dist/aos.css";
 import { Link } from "react-router";
 
-
 const ProjectCard = ({ project }: { project: TProject }) => {
-
   return (
-    <div data-aos="zoom-in-up" >
+    <div data-aos="zoom-in-up">
       <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
         <div className="aspect-[16/9]">
           <img
@@ -19,9 +18,10 @@ const ProjectCard = ({ project }: { project: TProject }) => {
         </div>
         <div className="p-6">
           <h2 className="text-2xl font-semibold mb-2">{project.title}</h2>
-          {/* <p className="text-gray-600 text-sm mb-4">{project.description}</p> */}
           {project.description.length > 130 ? (
-            <p className="text-gray-600 text-sm mb-4">{project.description.slice(0,130)}.....</p>
+            <p className="text-gray-600 text-sm mb-4">
+              {project.description.slice(0, 130)}.....
+            </p>
           ) : (
             <p className="text-gray-600 text-sm mb-4">{project.description}</p>
           )}
@@ -38,23 +38,23 @@ const ProjectCard = ({ project }: { project: TProject }) => {
             </ul>
           </div>
 
-          <div className="flex justify-between mt-4">
+          <div className="flex justify-between mt-4 ">
             <a
               href={project.liveUrl}
-              className="hover:text-blue-600 flex items-center gap-1 hover:underline text-sm"
+              className="bg-primary px-3 rounded-full flex font-semibold items-center gap-1 text-white hover:bg-secondary"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLink /> Live Preview
+              <HiOutlineExternalLink />
+              Live Demo
             </a>
 
             {/* Add Detail button here */}
             <Link to={`/projects/${project.id}`}>
-              <div className="tooltip" data-tip="Deatils">
-                <button className="btn btn-circle hover:bg-gradient-to-r from-primary to-secondary">
-                  <FaArrowRight className="hover:text-white md:text-xl" />
-                </button>
-              </div>
+              <button className="btn btn-outline flex items-center px-3 hover:bg-primary border-primary shadow-sm rounded-full font-semibold  hover:text-white">
+                Details
+                <FaArrowRight />
+              </button>
             </Link>
           </div>
         </div>

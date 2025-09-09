@@ -7,7 +7,7 @@ import AOS from "aos";
 const MainLayOut = () => {
     useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration in ms
+      duration: 9000, // animation duration in ms
       once: false,     // whether animation should happen only once
     });
   }, []);
