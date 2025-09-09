@@ -6,7 +6,7 @@ import { Link } from "react-router";
 
 const ProjectCard = ({ project }: { project: TProject }) => {
   return (
-    <div data-aos="zoom-in-up" data-aos-duration="2000">
+    <div data-aos="zoom-in-up" data-aos-duration="1000">
       <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
         <div className="aspect-[16/9]">
           <img
