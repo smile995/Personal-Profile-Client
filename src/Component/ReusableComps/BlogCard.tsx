@@ -1,11 +1,12 @@
 import { Link } from "react-router";
 import type { TBlog } from "../../Tyeps";
 
+import "aos/dist/aos.css";
 const BlogCard = ({ blog }: { blog: TBlog }) => {
   const { date, id, image, summary, tag, title } = blog;
   return (
     <Link to={`/blogs/${id}`}>
-      <div className="rounded-xl overflow-hidden bg-white shadow-md hover:shadow-lg transition duration-300  ">
+      <div  data-aos="zoom-in-right" className="rounded-xl overflow-hidden bg-white shadow-md hover:shadow-lg transition duration-300  ">
         <div className="aspect-[16/9]">
           <img
             src={image}

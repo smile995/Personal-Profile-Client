@@ -1,10 +1,14 @@
-import { Link } from "react-router";
 import type { TProject } from "../../Tyeps";
 import { FaArrowRight, FaLink } from "react-icons/fa6";
 
+import "aos/dist/aos.css";
+import { Link } from "react-router";
+
+
 const ProjectCard = ({ project }: { project: TProject }) => {
+
   return (
-    <div>
+    <div data-aos="zoom-in-up" >
       <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
         <div className="aspect-[16/9]">
           <img
