@@ -74,7 +74,7 @@ export const projects: TProject[] = [
       "My personal developer portfolio website showcasing projects, skills, resume, and blog. Fully responsive and professional layout.",
     longDescription:
       "A modern, clean portfolio site built with React and Tailwind CSS. Includes project showcases, a blog, contact form, and downloadable resume.",
-    tech: ["React", "Tailwind CSS", "React Router", "TypeScript","Nodemailer", "Ant Design"],
+    tech: ["React", "Tailwind CSS", "React Router", "TypeScript","Nodemailer", "Ant"],
     features: [
       "Dynamic project rendering",
       "Blog and contact pages",
