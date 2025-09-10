@@ -6,7 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import HeaderTitle from "./HeaderTitle";
 import { Educations } from "../../Data/education";
-
+import "aos/dist/aos.css";
 const EducationTimeline = () => {
   return (
     <div>

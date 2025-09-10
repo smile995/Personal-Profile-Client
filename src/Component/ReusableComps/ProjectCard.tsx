@@ -7,7 +7,7 @@ import { Link } from "react-router";
 const ProjectCard = ({ project }: { project: TProject }) => {
   return (
     <div data-aos="zoom-in-up" data-aos-duration="1000">
-      <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+      <div className="bg-white hover:bg-black hover:text-white rounded-xl shadow-lg hover:border-2  overflow-hidden hover:border-primary hover:shadow-primary transition duration-300">
         <div className="aspect-[16/9]">
           <img
             src={project?.imageUrl}
@@ -17,15 +17,15 @@ const ProjectCard = ({ project }: { project: TProject }) => {
         </div>
         <div className="p-6">
           <h2 className="text-2xl font-semibold mb-2">{project?.title}</h2>
-          {project?.description.length > 130 ? (
-            <p className="text-gray-600 text-sm mb-4">
-              {project?.description.slice(0, 130)}.....
+          {project?.description.length > 120 ? (
+            <p className=" text-sm mb-4">
+              {project?.description.slice(0, 120)}.....
             </p>
           ) : (
-            <p className="text-gray-600 text-sm mb-4">{project?.description}</p>
+            <p className="text-sm mb-4">{project?.description}</p>
           )}
           <div className="mb-3">
-            <strong className="text-sm text-gray-600">Tech Stack:</strong>
+            <strong className="text-sm ">Tech Stack:</strong>
             <ul className="flex flex-wrap gap-2 mt-1">
               {project?.tech.map((t, i) => (
                 <li key={i}>

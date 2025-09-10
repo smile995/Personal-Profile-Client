@@ -9,7 +9,7 @@ const ReviewSection = () => {
     <Container>
       <div>
         <HeaderTitle
-          title="Reviews & Recommendations"
+          title="What Expert Says !!"
           subTitle="Real experiences and endorsements that showcase my commitment to excellence."
         />
       </div>
