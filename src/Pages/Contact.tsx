@@ -7,7 +7,7 @@ import Lottie from "lottie-react";
 import EmailForm from "../Component/ReusableComps/EmailForm";
 const Contact = () => {
   return (
-    <div>
+    <div data-aos="fade-up" data-aos-duration="1200">
       <HeaderTitle
         title="Get in Touch"
         subTitle="  Whether you want to collaborate, have a question, or just want to say hi —

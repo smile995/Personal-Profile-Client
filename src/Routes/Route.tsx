@@ -35,7 +35,6 @@ export const router = createBrowserRouter([
     element: <DashboardLayout />,
     children: [
       { index: true, element: <ProfileStatistics /> },
-      { path: "profile-statistics", element: <ProfileStatistics /> },
       { path: "create-projects", element: <CreateProject /> },
       { path: "add-educations", element: <AddEducation /> },
       { path: "add-experienecs", element: <AddExperience /> },
