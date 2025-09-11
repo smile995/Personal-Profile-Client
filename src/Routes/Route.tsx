@@ -14,11 +14,13 @@ import AddEducation from "../Pages/AdminPages/AddEducation";
 import CreateBlog from "../Pages/AdminPages/CreateBlog";
 import AddExperience from "../Pages/AdminPages/AddExperience";
 import ProfileStatistics from "../Pages/AdminPages/ProfileStatistics";
+import NotFound from "../Pages/NotFound";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayOut />,
+    errorElement: <NotFound />,
     children: [
       { index: true, element: <HomePage /> },
       { path: "/about", element: <AboutPage /> },
@@ -33,6 +35,7 @@ export const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <DashboardLayout />,
+    errorElement: <NotFound />,
     children: [
       { index: true, element: <ProfileStatistics /> },
       { path: "create-projects", element: <CreateProject /> },
