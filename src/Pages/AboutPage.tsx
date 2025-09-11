@@ -3,18 +3,18 @@ import EducationTimeline from "../Component/ReusableComps/EducationTimeline";
 import "aos/dist/aos.css";
 import HeaderTitle from "../Component/ReusableComps/HeaderTitle";
 import Lottie from "lottie-react";
-import education from "../assets/Lotties/education.json";
 import hello from "../assets/Lotties/hello.json";
+
 const AboutPage = () => {
   return (
     <Container>
-      <section  >
+      <section>
         <HeaderTitle
           title="Introducing Myself"
           subTitle="Explore about myself with valuable informations"
         />
       </section>
-      <section data-aos="fade-up" data-aos-duration="1200" >
+      <section data-aos="fade-up" data-aos-duration="1200">
         <div className="grid grid-cols-1  md:grid-cols-5 gap-3 ">
           <div className="p-5 md:p-8 col-span-2 ">
             <Lottie className="w-full" animationData={hello} loop={true} />
@@ -73,19 +73,29 @@ const AboutPage = () => {
       </section>
 
       {/* Skills Summary */}
-      <section data-aos="fade-up" data-aos-duration="1200" className="bg-yellow-200 ">
+      {/* <section
+        data-aos="fade-up"
+        data-aos-duration="1200"
+        className="bg-yellow-200 "
+      >
         <div>skills with animation and transection</div>
-      </section>
+      </section> */}
 
       {/* Experience */}
-      <section data-aos="fade-up" data-aos-duration="1200"  className="bg-purple-300 ">
+      {/* <section
+        data-aos="fade-up"
+        data-aos-duration="1200"
+        className="bg-purple-300 "
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 items-center">
           <div>
             <Lottie animationData={education} loop={true} />
           </div>
-          <div>Datails of experience</div>
+          <div className="bg-blue-300 ">
+            <ESwipper />
+          </div>
         </div>
-      </section>
+      </section> */}
     </Container>
   );
 };
